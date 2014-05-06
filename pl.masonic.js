@@ -87,7 +87,6 @@
 								masonry: masonrySetup
 							}).isotope( 'reLayout' )
 
-							plPrint('numcols'+numCols)
 							
 						})
 						
