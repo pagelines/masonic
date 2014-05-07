@@ -40,20 +40,19 @@
 		
 		function plMasonryLayout( ){
 			
-				var element = $(this)
-				, 	format = element.data('format')
-				,	layoutMode = ( format == 'grid' ) ? 'fitRows' : 'masonry'
-				,	scrollSpeed
+				var scrollSpeed
 				, 	easing
-				, 	shown = element.data('shown') || 3
-				,	scrollSpeed = element.data('scroll-speed') || 700
-				,	easing = element.data('easing') || 'linear'
+				
 				,	numberCols = 3
-			//	,	bodySize = getComputedStyle(document.body, ':after').getPropertyValue('content'); 
 	
 				$('.masonic-gallery').each(function(  ){
 			
 						var theGallery = $(this)
+						, 	format = theGallery.data('format')
+						,	layoutMode = ( format == 'grid' ) ? 'fitRows' : 'masonry'
+						, 	shown = theGallery.data('shown') || 3
+						,	scrollSpeed = theGallery.data('scroll-speed') || 700
+						,	easing = theGallery.data('easing') || 'linear'
 						
 						theGallery.imagesLoaded(  function(){
 							

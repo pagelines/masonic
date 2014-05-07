@@ -260,7 +260,7 @@ class PLMasonic extends PageLinesSection {
 
 			<div class="masonic-wrap">
 				<div class="masonic-header pl-area-ui-element">
-					<div class="masonic-header-wrap pl-content">
+					<div class="masonic-header-wrap">
 						<div class="masonic-header-content-pad fix">
 							<div class="masonic-title"><?php echo $default_title; ?></div>
 							<ul class="masonic-nav inline-list">
