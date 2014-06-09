@@ -255,17 +255,14 @@ class PLMasonic extends PageLinesSection {
 
 		if(!empty($posts)) {
 			?>
-
-
-
 			<div class="masonic-wrap">
 				<div class="masonic-header pl-area-ui-element">
 					<div class="masonic-header-wrap">
 						<div class="masonic-header-content-pad fix">
 							<div class="masonic-title"><?php echo $default_title; ?></div>
 							<ul class="masonic-nav inline-list">
-								<lh>Sort:</lh>
-								<li class="pl-link"><a href="#" data-filter="*">All</a></li>
+								<lh><?php _e( 'Sort', 'pagelines' ); ?>:</lh>
+								<li class="pl-link"><a href="#" data-filter="*"><?php _e( 'All', 'pagelines' ); ?></a></li>
 								<?php
 								if( is_array( $list ) && ! empty( $list ) ){
 									foreach( $list as $key => $l ){
