@@ -261,7 +261,7 @@ class PLMasonic extends PageLinesSection {
 						<div class="masonic-header-content-pad fix">
 							<div class="masonic-title"><?php echo $default_title; ?></div>
 							<ul class="masonic-nav inline-list">
-								<lh><?php _e( 'Sort', 'pagelines' ); ?>:</lh>
+								<li class="lh"><?php _e( 'Sort', 'pagelines' ); ?>:</li>
 								<li class="pl-link"><a href="#" data-filter="*"><?php _e( 'All', 'pagelines' ); ?></a></li>
 								<?php
 								if( is_array( $list ) && ! empty( $list ) ){
@@ -361,7 +361,7 @@ class PLMasonic extends PageLinesSection {
 								<?php the_excerpt();?>
 							</div>
 							<?php endif;?>
-							
+
 						</div>
 					<?php endif;?>
 
